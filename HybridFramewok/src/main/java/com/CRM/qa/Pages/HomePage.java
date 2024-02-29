@@ -29,6 +29,8 @@ public class HomePage extends TestBase{
 	}
 
 	public boolean validationOfUserOnHeader() {
+		new WebDriverWait(driver,   
+				Duration.ofSeconds(30)).until(ExpectedConditions.visibilityOf(uservalidation));
 		return  uservalidation.isDisplayed();
 	}
 

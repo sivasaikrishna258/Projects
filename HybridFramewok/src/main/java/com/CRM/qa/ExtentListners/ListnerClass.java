@@ -51,10 +51,10 @@ public class ListnerClass extends TestBase implements ITestListener{
 	  public void onTestSuccess(ITestResult result) {
 	  System.out.println("Name of the test method successfully excuted "+result.getName());
 	   test=reports.createTest(result.getName());
-	   test.log(Status.PASS, MarkupHelper.createLabel("Name of the skip test case is: "+result.getName().getClass(),ExtentColor.GREEN));
+	   test.log(Status.PASS, MarkupHelper.createLabel("Name of the success test case is: "+result.getName(),ExtentColor.GREEN));
 	   for (String group : result.getMethod().getGroups())
 			test.assignCategory(group);
-
+	   
 		if (result.getThrowable() != null) {
 			test.log(Status.PASS, result.getThrowable());
 		} else {
@@ -76,7 +76,6 @@ public class ListnerClass extends TestBase implements ITestListener{
 		try {
 			FileUtils.copyFile(scrFile, new File(currentDir + "/screenshots/" + result.getName() + ".png"));
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		 File screenShotFile = new File(currentDir);
