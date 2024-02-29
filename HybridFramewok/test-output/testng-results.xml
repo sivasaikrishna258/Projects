@@ -2,24 +2,24 @@
 <testng-results total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-02-29T04:05:44Z" name="Default suite" finished-at="2024-02-29T04:06:01Z" duration-ms="17525">
+  <suite started-at="2024-02-29T11:28:24Z" name="Default suite" finished-at="2024-02-29T11:29:11Z" duration-ms="46363">
     <groups>
     </groups>
-    <test started-at="2024-02-29T04:05:44Z" name="Default test" finished-at="2024-02-29T04:06:01Z" duration-ms="17525">
-      <class name="com.CRM.qa.Testcases.HomaPageTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.CRM.qa.Testcases.HomaPageTest@247310d0]" started-at="2024-02-29T09:35:44Z" name="setup" finished-at="2024-02-29T09:35:58Z" duration-ms="14452" status="PASS">
+    <test started-at="2024-02-29T11:28:24Z" name="Default test" finished-at="2024-02-29T11:29:11Z" duration-ms="46363">
+      <class name="com.CRM.qa.Testcases.Roughwork">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.CRM.qa.Testcases.Roughwork@7d9d0818]" started-at="2024-02-29T16:58:24Z" name="setup" finished-at="2024-02-29T16:58:56Z" duration-ms="31792" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyUserNameTest()[pri:0, instance:com.CRM.qa.Testcases.HomaPageTest@247310d0]" started-at="2024-02-29T09:35:58Z" name="verifyUserNameTest" finished-at="2024-02-29T09:36:01Z" duration-ms="2829" status="PASS">
+        <test-method signature="login()[pri:0, instance:com.CRM.qa.Testcases.Roughwork@7d9d0818]" started-at="2024-02-29T16:58:56Z" name="login" finished-at="2024-02-29T16:59:11Z" duration-ms="14555" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyUserNameTest -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.CRM.qa.Testcases.HomaPageTest@247310d0]" started-at="2024-02-29T09:36:01Z" name="teardown" finished-at="2024-02-29T09:36:01Z" duration-ms="229" status="PASS">
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.CRM.qa.Testcases.Roughwork@7d9d0818]" started-at="2024-02-29T16:59:11Z" name="teardown" finished-at="2024-02-29T16:59:11Z" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- com.CRM.qa.Testcases.HomaPageTest -->
+      </class> <!-- com.CRM.qa.Testcases.Roughwork -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
