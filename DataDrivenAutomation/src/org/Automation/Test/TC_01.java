@@ -26,7 +26,9 @@ public class TC_01 extends DriverInstance {
 	@Test(dataProvider="register",dataProviderClass = DataProvidersToTestcases.class)
 	public  void login(String uname,String pass) throws IOException {
 		
+		
 		driver.get(Utility.fetchProperty("Applicationurl").toString());
+		
 		LoginPage login=new LoginPage(driver);
 		login.enterUsername(uname);
 		login.enterPwd(pass);

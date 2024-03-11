@@ -19,15 +19,15 @@ import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 
 public class extentReportsEx {
-	ExtentHtmlReporter htmlReporter;
-	ExtentReports extent;
+//	ExtentHtmlReporter htmlReporter;
+//	ExtentReports extent;
 	WebDriver driver;
 	@BeforeTest
 	public void setup() {
 
-		htmlReporter = new ExtentHtmlReporter("extent.html");
-		extent = new ExtentReports();
-		extent.attachReporter(htmlReporter);
+//		htmlReporter = new ExtentHtmlReporter("extent.html");
+//		extent = new ExtentReports();
+//		extent.attachReporter(htmlReporter);
 		System.setProperty("webdriver.chrome.driver","./Driver/chromedriver.exe");
 		driver=new ChromeDriver();
 	}
@@ -36,15 +36,15 @@ public class extentReportsEx {
 	@Test
 	public void test() throws Exception {
 
-		ExtentTest test = extent.createTest("secio", "Sample description");
+		
 		driver.get("https://www.facebook.com");
-		test.info("navigated to login page");
+//		test.info("navigated to login page");
 		driver.findElement(By.partialLinkText("Create new account")).click();
-		test.fail("user are able to click on create act");
+//		test.fail("user are able to click on create act");
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		
 		driver.findElement(By.name("firstname")).sendKeys("syd");  
-		test.pass("i4kfit9m4vi");
+//		test.pass("i4kfit9m4vi");
 		driver.findElement(By.name("lastname")).sendKeys("jikm");  
 		driver.findElement(By.name("reg_email__")).sendKeys("kmjnnijn@g,ail.vom");
 		driver.findElement(By.name("reg_email_confirmation__")).sendKeys("kmjnnijn@g,ail.vom");
@@ -61,7 +61,7 @@ public class extentReportsEx {
 
 	@AfterTest
 	public void teardown() {
-		extent.flush();
+//		extent.flush();
 		driver.close();
 
 	}

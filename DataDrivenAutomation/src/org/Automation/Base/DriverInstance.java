@@ -17,18 +17,13 @@ import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 
 public class DriverInstance {
 	public static WebDriver driver;
-	ExtentHtmlReporter htmlReporter;
-	protected ExtentReports extent;
 	
 	
 	@BeforeTest
 	public void initiateDriver() throws IOException 
 	{
 		
-//		htmlReporter = new ExtentHtmlReporter("extent2.html");
-//		extent = new ExtentReports();
-//		extent.attachReporter(htmlReporter);
-		System.setProperty("webdriver.chrome.driver","./Driver/chromedriver.exe");
+				System.setProperty("webdriver.chrome.driver","./Driver/chromedriver.exe");
 		driver=new ChromeDriver();
 		driver.manage().window().maximize();
 		
